@@ -14,6 +14,12 @@ public class manager : MonoBehaviour
 
 	public string value;
 
+	public static manager instance;
+	private void Awake() {
+		if(instance == null)
+			instance = this;
+	}
+
     void Start()
     {
 		try{
@@ -84,7 +90,7 @@ public class manager : MonoBehaviour
 				Debug.Log("Failed");
 				text.text = "failed";
 				//if(text3d != null)
-				//	text3d.text = "failed";
+					text3d.text = "failed";
 			};
 
 			helper.OnDataReceived += () => {
@@ -92,7 +98,7 @@ public class manager : MonoBehaviour
 				value = text.text;
 				
 				//if(text3d!= null)
-				//	text3d.text = helper.Read();
+					text3d.text = value;
 			};
 
 			helper.OnPermissionNotGranted += () => {
@@ -103,7 +109,7 @@ public class manager : MonoBehaviour
 		}catch(Exception ex){
 			text.text = ex.Message;
 			//if(text3d != null)
-			//		text3d.text = ex.Message;
+					text3d.text = ex.Message;
 		}
         
     }
@@ -121,7 +127,7 @@ public class manager : MonoBehaviour
 		else 
 		    return;
 
-		Debug.Log("jhjhjhj");
+//		Debug.Log("jhjhjhj");
 
 		if(!helper.isConnected())
 		if(GUI.Button(new Rect(Screen.width/2-Screen.width/10, Screen.height/10, Screen.width/5, Screen.height/10), "Connect"))

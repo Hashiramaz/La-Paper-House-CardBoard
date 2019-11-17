@@ -9,6 +9,6 @@ public class UpdateTextValues : MonoBehaviour
     public TextMesh text;
 
     private void Update() {
-        text.text = manag.value;
+        text.text = manager.instance.value;
     }
 }
