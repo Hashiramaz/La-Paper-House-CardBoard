@@ -15,9 +15,12 @@ EditorBuildSettings:
     path: Assets/Scenes/HelloVR 1.unity
     guid: 9eeb152adcc27aa45b1a4df8568d9dab
   - enabled: 0
-    path: Assets/Test Serial Port.unity
+    path: Assets/_CustomAssets/Scenes/Test Serial Port.unity
     guid: 32f7832db0a21314c8bc9368a4e652a5
-  - enabled: 1
-    path: Assets/Scenes/HelloVR 2.unity
+  - enabled: 0
+    path: Assets/_CustomAssets/Scenes/Enviroments/DesertScene.unity
     guid: c46e1e56254acd6429ff501609d6475a
+  - enabled: 1
+    path: Assets/_CustomAssets/Scenes/Enviroments/DesertScene 1.unity
+    guid: 6e7b96fc5db4205448bd8be656890dcc
   m_configObjects: {}

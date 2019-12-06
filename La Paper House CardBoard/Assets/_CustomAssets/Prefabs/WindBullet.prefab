@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 8203056051298256751}
   m_Layer: 9
   m_Name: WindBullet
-  m_TagString: Untagged
+  m_TagString: Wind
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -124,6 +124,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_rb: {fileID: 3650887922092593753}
   speed: 10
+  alive: 1
 --- !u!114 &8203056051298256751
 MonoBehaviour:
   m_ObjectHideFlags: 0
